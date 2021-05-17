@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.[hash].js',
         path: path.join(__dirname, "/dist"),
-        publicPath: '/Min-Max-System/dist',
+        publicPath: 'https://raw.githubusercontent.com/awelijuh/Min-Max-System/master/dist',
         // filename: 'static/[name].js',
     },
     // devtool: 'cheap-module-source-map',
