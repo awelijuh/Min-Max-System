@@ -6,9 +6,9 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
     entry: ['babel-polyfill', "./src/index.js"],
     output: {
-        filename: 'static/bundle.[hash].js',
+        filename: 'bundle.[hash].js',
         path: path.join(__dirname, "/dist"),
-        publicPath: '/Min-Max-System/dist',
+        publicPath: '/Min-Max-System',
         // filename: 'static/[name].js',
     },
     // devtool: 'cheap-module-source-map',
