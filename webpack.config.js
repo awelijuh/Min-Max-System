@@ -6,15 +6,15 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
     entry: ['babel-polyfill', "./src/index.js"],
     output: {
-        filename: 'bundle.[hash].js',
+        filename: 'static/bundle.[hash].js',
         path: path.join(__dirname, "/dist"),
-        publicPath: 'https://raw.githubusercontent.com/awelijuh/Min-Max-System/master/dist',
+        publicPath: '/',
         // filename: 'static/[name].js',
     },
-    // devtool: 'cheap-module-source-map',
-    devtool: 'source-map',
-    // mode: "production",
-    mode: "development",
+    devtool: 'cheap-module-source-map',
+    // devtool: 'source-map',
+    mode: "production",
+    // mode: "development",
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,

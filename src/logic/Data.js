@@ -72,10 +72,10 @@ export class Data {
         }
         this.data.push({
             x: this.currentDay,
-            y: this.z,
-            porog: this.params.porog,
-            garant: this.params.garant,
-            maxWant: this.params.maxWant,
+            y: parseFloat(this.z.toFixed(2)),
+            porog: parseFloat(this.params.porog.toFixed(2)),
+            garant: parseFloat(this.params.garant.toFixed(2)),
+            maxWant: parseFloat(this.params.maxWant.toFixed(2)),
         })
     }
 
@@ -97,7 +97,7 @@ export class Data {
         this.queue = []
         this.z = this.params?.maxWant + this.params?.demandInDay;
         this.currentDay = -1;
-        this.queueIndex = 0
+        this.queueIndex = 1
         this.delays = {}
         this.dd = null
     }
