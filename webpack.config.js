@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: 'static/bundle.[hash].js',
         path: path.join(__dirname, "/dist"),
-        publicPath: '/',
+        publicPath: '/dist',
         // filename: 'static/[name].js',
     },
     // devtool: 'cheap-module-source-map',
